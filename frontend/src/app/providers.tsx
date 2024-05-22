@@ -11,7 +11,6 @@ export default function ClientProviders({ children }: PropsWithChildren) {
   return (
     <UseInkathonProvider
       appName="ink!athon" // TODO
-      connectOnInit={true}
       defaultChain={env.defaultChain}
       deployments={getDeployments()}
     >
