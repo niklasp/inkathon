@@ -148,7 +148,7 @@ importers:
         version: 1.0.7(@types/react-dom@18.3.0)(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@scio-labs/use-inkathon':
         specifier: file:../use-inkathon
-        version: '@niklasp/use-inkathon@file:use-inkathon(@nightlylabs/wallet-selector-polkadot@0.2.5(@polkadot/util@12.6.2)(bufferutil@4.0.8)(encoding@0.1.13)(utf-8-validate@6.0.3))(@polkadot/api-contract@11.0.2(bufferutil@4.0.8)(utf-8-validate@6.0.3))(@polkadot/api@11.0.2(bufferutil@4.0.8)(utf-8-validate@6.0.3))(@polkadot/extension-inject@0.47.3(@polkadot/api@11.0.2(bufferutil@4.0.8)(utf-8-validate@6.0.3))(@polkadot/util@12.6.2)(bufferutil@4.0.8)(utf-8-validate@6.0.3))(@polkadot/keyring@12.6.2(@polkadot/util-crypto@12.6.2(@polkadot/util@12.6.2))(@polkadot/util@12.6.2))(@polkadot/types@11.0.2)(@polkadot/util-crypto@12.6.2(@polkadot/util@12.6.2))(@polkadot/util@12.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)'
+        version: use-inkathon@file:use-inkathon
       '@vercel/analytics':
         specifier: ^1.2.2
         version: 1.2.2(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
@@ -877,21 +877,6 @@ packages:
 
   '@nightlylabs/wallet-selector-polkadot@0.2.5':
     resolution: {integrity: sha512-U3zMwysGHSZzQ5mkO3oRlJQuDDqjNrelobO8oInhSA/JNH7Qmg4ntDYCIAsZF0OAgHayATVEse27f4KfZY9j9Q==}
-
-  '@niklasp/use-inkathon@file:use-inkathon':
-    resolution: {directory: use-inkathon, type: directory}
-    engines: {node: '>=18 <=20', pnpm: '>8'}
-    peerDependencies:
-      '@nightlylabs/wallet-selector-polkadot': '>=0.1.10'
-      '@polkadot/api': '>=10'
-      '@polkadot/api-contract': '>=10'
-      '@polkadot/extension-inject': '>=0.46'
-      '@polkadot/keyring': '>=10'
-      '@polkadot/types': '>=10'
-      '@polkadot/util': '>=10'
-      '@polkadot/util-crypto': '>=10'
-      react: '>=18'
-      react-dom: '>=18'
 
   '@noble/curves@1.3.0':
     resolution: {integrity: sha512-t01iSXPuN+Eqzb4eBX0S5oubSqXbK/xXa1Ne18Hj8f9pStxztHCE2gfboSp/dZRLSqfuLpRK2nDXDK+W9puocA==}
@@ -4338,6 +4323,9 @@ packages:
       '@types/react':
         optional: true
 
+  use-inkathon@file:use-inkathon:
+    resolution: {directory: use-inkathon, type: directory}
+
   use-sidecar@1.1.2:
     resolution: {integrity: sha512-epTbsLuzZ7lPClpz2TyryBfztm7m+28DlEv2ZCQ3MDr5ssiwyOwGH/e5F9CkfWjJ1t4clvI58yF822/GUkjjhw==}
     engines: {node: '>=10'}
@@ -5187,19 +5175,6 @@ snapshots:
       - supports-color
       - ts-node
       - utf-8-validate
-
-  '@niklasp/use-inkathon@file:use-inkathon(@nightlylabs/wallet-selector-polkadot@0.2.5(@polkadot/util@12.6.2)(bufferutil@4.0.8)(encoding@0.1.13)(utf-8-validate@6.0.3))(@polkadot/api-contract@11.0.2(bufferutil@4.0.8)(utf-8-validate@6.0.3))(@polkadot/api@11.0.2(bufferutil@4.0.8)(utf-8-validate@6.0.3))(@polkadot/extension-inject@0.47.3(@polkadot/api@11.0.2(bufferutil@4.0.8)(utf-8-validate@6.0.3))(@polkadot/util@12.6.2)(bufferutil@4.0.8)(utf-8-validate@6.0.3))(@polkadot/keyring@12.6.2(@polkadot/util-crypto@12.6.2(@polkadot/util@12.6.2))(@polkadot/util@12.6.2))(@polkadot/types@11.0.2)(@polkadot/util-crypto@12.6.2(@polkadot/util@12.6.2))(@polkadot/util@12.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@nightlylabs/wallet-selector-polkadot': 0.2.5(@polkadot/util@12.6.2)(bufferutil@4.0.8)(encoding@0.1.13)(utf-8-validate@6.0.3)
-      '@polkadot/api': 11.0.2(bufferutil@4.0.8)(utf-8-validate@6.0.3)
-      '@polkadot/api-contract': 11.0.2(bufferutil@4.0.8)(utf-8-validate@6.0.3)
-      '@polkadot/extension-inject': 0.47.3(@polkadot/api@11.0.2(bufferutil@4.0.8)(utf-8-validate@6.0.3))(@polkadot/util@12.6.2)(bufferutil@4.0.8)(utf-8-validate@6.0.3)
-      '@polkadot/keyring': 12.6.2(@polkadot/util-crypto@12.6.2(@polkadot/util@12.6.2))(@polkadot/util@12.6.2)
-      '@polkadot/types': 11.0.2
-      '@polkadot/util': 12.6.2
-      '@polkadot/util-crypto': 12.6.2(@polkadot/util@12.6.2)
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
 
   '@noble/curves@1.3.0':
     dependencies:
@@ -9496,6 +9471,8 @@ snapshots:
       tslib: 2.6.2
     optionalDependencies:
       '@types/react': 18.3.1
+
+  use-inkathon@file:use-inkathon: {}
 
   use-sidecar@1.1.2(@types/react@18.3.1)(react@18.3.1):
     dependencies:
